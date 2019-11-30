@@ -2,9 +2,11 @@ require 'pry'
 require_relative '../lib/concerns/memorable'
 
 class Artist
-  include Paramable
+  
   extend Memorable 
   extend Findable
+  include Paramable
+ 
   attr_accessor :name
   attr_reader :songs
 
